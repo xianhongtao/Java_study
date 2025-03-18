@@ -9,10 +9,10 @@ public class fibonacciSum {
         int num = sc.nextInt();
         for (int i = 1; i <= num; i++) {
             System.out.print(Var1 + " ");
+            totalSum += Var1;
             int sum = Var1 + Var2;
             Var1 = Var2;
             Var2 = sum;
-            totalSum += Var1;
         }
         System.out.println("\n" + "数列的和为：" + totalSum);
     }
