@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class CylinderVolumeCalculator {
+public class cylinderVolumeCalculator {
     public static void main(String[] args) {
         double radius;    // 圆柱体底面半径
         double height;    // 圆柱体高度
