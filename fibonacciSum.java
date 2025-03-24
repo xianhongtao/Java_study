@@ -14,6 +14,7 @@ public class fibonacciSum {
             Var1 = Var2;
             Var2 = sum;
         }
+        sc.close();
         System.out.println("\n" + "数列的和为：" + totalSum);
     }
 }

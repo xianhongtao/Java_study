@@ -20,5 +20,7 @@ public class cylinderVolumeCalculator {
         
         // 输出结果（保留两位小数）
         System.out.printf("体积是：" + volume);
+
+        input.close();
     }
 }

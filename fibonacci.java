@@ -12,6 +12,7 @@ public class fibonacci {
             Var1 = Var2;
             Var2 = sum;
         }
+        sc.close();
     }
 }
 

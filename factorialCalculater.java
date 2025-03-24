@@ -10,5 +10,6 @@ public class factorialCalculater {
             result *= i;
         }
         System.out.println(num + "的阶乘是：" + result);
+        sc.close();
     }
 }
