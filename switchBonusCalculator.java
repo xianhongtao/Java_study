@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class switchBonusCalculator {
+public class SwitchBonusCalculator {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
         System.out.print("请输入当月利润（元）：");

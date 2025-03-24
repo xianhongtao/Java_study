@@ -1,4 +1,4 @@
-public class shippingPriceCalculator {
+public class ShippingPriceCalculator {
     public static void main(String[] args) {
         double weight = 0;
         double price = 0;

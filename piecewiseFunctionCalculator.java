@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class piecewiseFunctionCalculator {
+public class PiecewiseFunctionCalculator {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         System.out.print("请输入x值: ");
