@@ -19,6 +19,6 @@ public class CylinderVolumeCalculator {
         volume = Math.PI * Math.pow(radius, 2) * height;
         
         // 输出结果（保留两位小数）
-        System.out.printf("体积是" + "%.2f", volume);
+        System.out.printf("体积是：" + volume);
     }
 }
