@@ -9,13 +9,13 @@ public class Ex_Taylor {
         //System.out.print("请输入精度，n的值（10^-n）：");
         //n = input.nextInt();
         //input.close();
-        double var = 1;
+        double counter = 1;
         for (; ;){
-            var *= i;
-            if (1 / var < Math.pow(10, -n)){
+            counter *= i;
+            if (1 / counter < Math.pow(10, -n)){
                 break;
             }
-            e += 1 / var;
+            e += 1 / counter;
             i++;
         }
         System.out.println("e = " + e);
