@@ -16,7 +16,7 @@ public class LegendrePolynomials {
         System.out.println("勒让德多项式P的结果=" +result);
     }
 
-    public static double f(int n, double x) {
+    static double f(int n, double x) {
         if (n == 0) {
             return 1;
         }
