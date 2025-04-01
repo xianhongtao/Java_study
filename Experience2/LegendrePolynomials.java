@@ -11,7 +11,6 @@ public class LegendrePolynomials {
         System.out.println("请输入x的值（实数）:");
         x = sc.nextDouble();
         sc.close();
-
         result = f(n, x);
         System.out.println("勒让德多项式P的结果=" +result);
     }
