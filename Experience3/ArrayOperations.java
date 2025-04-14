@@ -1,6 +1,6 @@
-import java.util.*;
+import java.util.Scanner;
 
-public class ArrayManipulationDemo {
+public class ArrayOperations {
     public static void main(String[] args) {
         int n, index;
         double[] a;
@@ -8,6 +8,7 @@ public class ArrayManipulationDemo {
         Scanner sc = new Scanner(System.in);
         System.out.println("请输入数组的大小：");
         n = sc.nextInt();
+        sc.nextLine();
         a = new double[n];
         System.out.println("请输入" + n +"个数,用空格分隔：");
         String input = sc.nextLine();
