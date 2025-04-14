@@ -2,11 +2,14 @@ import java.util.*;
 
 public class ArrayManipulationDemo {
     public static void main(String[] args) {
-        double[] a = new double[5];
+        int n, index;
+        double[] a;
         double num;
-        int index;
         Scanner sc = new Scanner(System.in);
-        System.out.println("请输入5个数,用空格分隔：");
+        System.out.println("请输入数组的大小：");
+        n = sc.nextInt();
+        a = new double[n];
+        System.out.println("请输入" + n +"个数,用空格分隔：");
         String input = sc.nextLine();
         sc.close();
         String[] inputArray = input.split(" ");
