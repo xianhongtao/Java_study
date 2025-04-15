@@ -9,9 +9,10 @@ public class Vote {
             int vote = sc.nextInt();
             if (vote >= 1 && vote <= 5) {
                 votes[vote - 1]++;
-            } else {
+            } 
+            else {
                 System.out.println("无效的投票，请重新输入。");
-                i--; // 不计入有效投票
+                i--;
             }
         }
         sc.close();
