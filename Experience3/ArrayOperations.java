@@ -48,6 +48,7 @@ public class ArrayOperations {
         }
         return max;
     }
+
     static int GetArrayMaxIndex(double[] array) {
         double max = array[0];
         int index = 0;
@@ -59,6 +60,7 @@ public class ArrayOperations {
         }
         return index;
     }
+
     static double GetArrayMin(double[] array) {
         double min = array[0];
         for (int i = 1; i < array.length; i++) {
@@ -69,6 +71,7 @@ public class ArrayOperations {
         return min;
         
     }
+    
     static int GetArrayMinIndex(double[] array) {
         double min = array[0];
         int index = 0;
