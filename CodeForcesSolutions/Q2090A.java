@@ -1,7 +1,7 @@
 package CodeForcesSolutions;
 import java.util.Scanner;
 
-public class CodeForce2090A {
+public class Q2090A {
     public static void main(String[] args)
     {
         String[] input;
