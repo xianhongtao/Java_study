@@ -6,4 +6,11 @@ public class Square extends Rectangle {
         length = side;
         width = side;
     }
+    
+    @Override
+    public void show() {
+        System.out.println("side = " + side);
+        System.out.println("area = " + area);
+        System.out.println("circumference = " + circumference);
+    }
 }
