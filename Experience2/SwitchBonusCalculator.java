@@ -1,4 +1,5 @@
 package Experience2;
+
 import java.util.Scanner;
 
 public class SwitchBonusCalculator {
@@ -7,7 +8,7 @@ public class SwitchBonusCalculator {
         System.out.print("请输入当月利润（元）：");
         double profit = input.nextDouble();
         double bonus = 0;
-        
+
         int grade = (int) (profit / 100000);
         switch (grade) {
             case 0:
@@ -32,7 +33,8 @@ public class SwitchBonusCalculator {
                 break;
             default:
                 if (profit > 1000000) {
-                    bonus = 100000 * 0.1 + 100000 * 0.075 + 200000 * 0.05 + 200000 * 0.03 + 400000 * 0.015 + (profit - 1000000) * 0.01;
+                    bonus = 100000 * 0.1 + 100000 * 0.075 + 200000 * 0.05 + 200000 * 0.03 + 400000 * 0.015
+                            + (profit - 1000000) * 0.01;
                 }
                 break;
         }

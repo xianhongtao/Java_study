@@ -8,7 +8,7 @@ public class ShippingPriceCalculator {
         weight = Double.parseDouble(System.console().readLine());
         System.out.println("请输入货物的单价：");
         price = Double.parseDouble(System.console().readLine());
-        switch ((int)(weight/250)){
+        switch ((int) (weight / 250)) {
             case 0:
                 discount = 0;
                 break;

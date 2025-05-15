@@ -1,4 +1,5 @@
 package Experience2;
+
 import java.util.Scanner;
 
 public class CombinationCalculator {
@@ -10,17 +11,17 @@ public class CombinationCalculator {
         int m = input.nextInt();
         input.close();
         long total = 1;
-        long upper = 1 , lowerleft = 1 , lowerright = 1;
-        for (int i = 1; i <= m; i++){
+        long upper = 1, lowerleft = 1, lowerright = 1;
+        for (int i = 1; i <= m; i++) {
             upper *= i;
         }
-        for (int i = 1; i <= m - n ; i++){
+        for (int i = 1; i <= m - n; i++) {
             lowerleft *= i;
         }
-        for (int i = 1; i <= n; i++){
+        for (int i = 1; i <= n; i++) {
             lowerright *= i;
         }
         total = upper / (lowerleft * lowerright);
         System.out.println("结果是：" + total);
-    }    
+    }
 }

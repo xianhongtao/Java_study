@@ -1,4 +1,5 @@
 import java.util.Scanner;
+
 public class Fibonacci {
     public static void main(String[] args) {
         int Var1 = 0;
@@ -15,4 +16,3 @@ public class Fibonacci {
         sc.close();
     }
 }
-

@@ -1,4 +1,5 @@
 import java.util.Scanner;
+
 public class FibonacciSum {
     public static void main(String[] args) {
         int Var1 = 0;

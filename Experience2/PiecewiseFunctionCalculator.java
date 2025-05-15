@@ -1,4 +1,5 @@
 package Experience2;
+
 import java.util.Scanner;
 
 public class PiecewiseFunctionCalculator {
@@ -7,7 +8,7 @@ public class PiecewiseFunctionCalculator {
         System.out.print("请输入x值: ");
         double x = scanner.nextDouble();
         double y;
-        
+
         if (x < -1) {
             y = x;
         } else if (x < 10) {
@@ -15,7 +16,7 @@ public class PiecewiseFunctionCalculator {
         } else {
             y = 3 * Math.sqrt(x) - 11;
         }
-        
+
         System.out.printf("y=" + y);
         scanner.close();
     }

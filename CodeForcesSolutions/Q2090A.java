@@ -1,4 +1,5 @@
 package CodeForcesSolutions;
+
 import java.util.Scanner;
 
 public class Q2090A {
