@@ -1,15 +1,16 @@
+import java.util.Scanner;
 
 public class NQueen {
-    static int queenCount;
+    static int n;
     static int solutions;
 
     public static void main(String[] args) {
         System.out.println("有几个皇后？");
-        java.util.Scanner scanner = new java.util.Scanner(System.in);
-        queenCount = Integer.parseInt(scanner.nextLine());
-        Boolean[][] chessPlate = new Boolean[queenCount][queenCount];
-        for (int i = 0; i < queenCount; i++) {
-            for (int j = 0; j < queenCount; j++) {
+        Scanner scanner = new Scanner(System.in);
+        n = Integer.parseInt(scanner.nextLine());
+        Boolean[][] chessPlate = new Boolean[n][n];
+        for (int i = 0; i < n; i++) {
+            for (int j = 0; j < n; j++) {
                 chessPlate[i][j] = false;
             }
         }
@@ -19,13 +20,13 @@ public class NQueen {
     }
 
     static void Step(Boolean[][] chessPlate, int currentRow) {
-        for (int currentColumn = 0; currentColumn < queenCount; currentColumn++) {
+        for (int currentColumn = 0; currentColumn < n; currentColumn++) {
             if (!chessPlate[currentRow][currentColumn]) {
-                Boolean[][] newPlate = new Boolean[queenCount][queenCount];
-                for (int i = 0; i < queenCount; i++) {
+                Boolean[][] newPlate = new Boolean[n][n];
+                for (int i = 0; i < n; i++) {
                     newPlate[i] = chessPlate[i].clone();
                 }
-                if (currentRow == queenCount - 1) {
+                if (currentRow == n - 1) {
                     solutions++;
                 } else {
                     Step(MarkQueenAttacks(newPlate, currentRow, currentColumn), currentRow + 1);
