@@ -8,6 +8,7 @@ public class NQueen {
         System.out.println("有几个皇后？");
         Scanner scanner = new Scanner(System.in);
         n = Integer.parseInt(scanner.nextLine());
+        scanner.close();
         Boolean[][] chessPlate = new Boolean[n][n];
         for (int i = 0; i < n; i++) {
             for (int j = 0; j < n; j++) {
@@ -42,26 +43,22 @@ public class NQueen {
         for (int i = 0; i < chessPlate[0].length; i++) {
             chessPlate[i][y] = true;
         }
-        int[] position = { x, y };
-        for (; position[0] < chessPlate.length && position[1] < chessPlate[0].length;) {
+        for (int[] position = { x, y }; position[0] < chessPlate.length && position[1] < chessPlate[0].length;) {
             chessPlate[position[0]][position[1]] = true;
             position[0]++;
             position[1]++;
         }
-        position = new int[] { x, y };
-        for (; position[0] >= 0 && position[1] < chessPlate[0].length;) {
+        for (int[] position = { x, y }; position[0] >= 0 && position[1] < chessPlate[0].length;) {
             chessPlate[position[0]][position[1]] = true;
             position[0]--;
             position[1]++;
         }
-        position = new int[] { x, y };
-        for (; position[0] < chessPlate.length && position[1] >= 0;) {
+        for (int[] position = { x, y }; position[0] < chessPlate.length && position[1] >= 0;) {
             chessPlate[position[0]][position[1]] = true;
             position[0]++;
             position[1]--;
         }
-        position = new int[] { x, y };
-        for (; position[0] >= 0 && position[1] >= 0;) {
+        for (int[] position = { x, y }; position[0] >= 0 && position[1] >= 0;) {
             chessPlate[position[0]][position[1]] = true;
             position[0]--;
             position[1]--;
