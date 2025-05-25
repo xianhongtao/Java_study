@@ -1,4 +1,4 @@
-package Experience4;
+package Experience4.Q1;
 
 public class Square extends Rectangle {
     public double side = 10, area;
